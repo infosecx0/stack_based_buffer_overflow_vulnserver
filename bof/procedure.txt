@@ -1,0 +1,53 @@
+1. Spike the program : -  find out loophole 
+
+
+start vulnserver !  
+connect with nc with second side
+
+type HELP 
+
+run commands with generaic _start_tcp  and creacker spk file 
+
+then attack on the other side check the crash !
+
+-----------------------------
+
+covert entire process in python again fuzz it with using trun and socket 
+
+----------------------------
+
+then create pattern to get start address of eip 
+
+----------------------------
+
+then get value with pattern offset --  and try to get exect EIP offset value for buffer
+
+--------------------------------
+
+then try to execute shellcode with eip  to come to know what are things that are supported in the attack  
+
+check hexdump from esp with right click 
+
+remove bogus 
+
+download mona modules from github and paste into pycommands in immunity 
+
+use !mona modules to use this module and find out our program to verifiy the protections
+
+so our program is not having any protection so
+
+now we need to a jum esp  so start nasm_shell.rb  
+# execute !mona find -s "\xff\xe4 -m essfunc.dll
+#625011af  
+
+shell = "A" * 2003 + "\xaf\x11\x50\62 
+
+
+#coz of litten endian formet we need to add these address into it the shell
+
+#now after execution search the address into immunity and make sure you get jmp esp and set a break point on it to stop the program for our purpos
+
+
+
+
+
